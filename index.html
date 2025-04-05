@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - E-commerce Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background: url('https://images.unsplash.com/photo-1542831371-d531d36971e6') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.85);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+        <p>Your one-stop shop for everything!</p>
+    </header>
+    <nav>
+        <a href="#top-deals">Top Deals</a>
+        <a href="#daily-deals">Deals of the Day</a>
+        <a href="#categories">Categories</a>
+        <a href="#bonus-points">Bonus Points</a>
+    </nav>
+    <section id="top-deals">
+        <h2 class="section-title">Top Deals</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="Top Deal 1">
+                <p>Wireless Headphones - 50% Off</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="Top Deal 2">
+                <p>Smartphone - Buy 1 Get 1 Free</p>
+            </div>
+        </div>
+    </section>
+    <section id="daily-deals">
+        <h2 class="section-title">Deals of the Day</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="Deal of the Day 1">
+                <p>LED TV - 40% Off Today!</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x150" alt="Deal of the Day 2">
+                <p>Fitness Band - Flat $30 Off</p>
+            </div>
+        </div>
+    </section>
+    <section id="categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="card-container">
+            <div class="card"><p>Electronics</p></div>
+            <div class="card"><p>Fashion</p></div>
+            <div class="card"><p>Home & Kitchen</p></div>
+            <div class="card"><p>Sports & Outdoors</p></div>
+        </div>
+    </section>
+    <section id="bonus-points">
+        <h2 class="section-title">Earn Bonus Points</h2>
+        <p>Shop more and earn points for every purchase. Redeem points for discounts, exclusive products, and more!</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
